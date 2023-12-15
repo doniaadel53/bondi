@@ -1,0 +1,76 @@
+:root {
+    --dark-color: #4682A9;
+    --text-color: #F6F4EB;
+    --blue-color: #749BC2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 10000px;
+}
+
+/* start navbar */
+.navbar {
+    background-color: var(--dark-color);
+
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.navbar .navbar-nav .nav-link .active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--blue-color);
+}
+
+.navbar img {
+    height: 44px;
+}
+
+.search {
+    color: black;
+    border-left: 3px solid;
+}
+
+.navbar .navbar-toggler {
+    color: black;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.navbar .navbar-toggler[aria-exaonded="true"] {
+    border-color: var(--text-color);
+}
+
+.main-btn {
+    background-color: BLACK;
+    color: var(--blue-color);
+    padding: 0.5rem 1rem;
+}
+
+
+.main-btn:hover {
+    color: var(--text-color);
+}
+
+/* end navbar */
+
+/* start landing */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
