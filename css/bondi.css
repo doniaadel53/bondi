@@ -2,6 +2,9 @@
     --dark-color: #4682A9;
     --text-color: #F6F4EB;
     --blue-color: #749BC2;
+    --section-color: #eff7fa;
+    --head-color: #8D7B68;
+
 }
 
 body {
@@ -67,6 +70,18 @@ body {
     color: var(--text-color);
 }
 
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
 /* end navbar */
 
 /* start landing */
@@ -74,3 +89,92 @@ body {
     background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
+
+/* end landing */
+/* start features */
+.feature .icon-holder {
+    height: 200px;
+}
+
+.feature h2 {
+    color: var(--blue-color);
+}
+
+.feature .icon {
+    color: var(--head-color);
+}
+
+.feature .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.feature .icon-holder .icon {
+    color: var(--blue-color);
+}
+
+.feature .feat h4 {
+    color: var(--head-color);
+}
+
+/* end features */
+/* start our work */
+
+.our-work h2 {
+    color: var(--blue-color);
+}
+
+.our-work .icon {
+    color: var(--head-color);
+}
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul .active {
+    background-color: black;
+    color: var(--text-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--head-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #749bc2d4;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+/* end our work */
