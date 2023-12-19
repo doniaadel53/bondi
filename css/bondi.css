@@ -3,7 +3,7 @@
     --text-color: #F6F4EB;
     --blue-color: #749BC2;
     --section-color: #eff7fa;
-    --head-color: #8D7B68;
+    --head-color: black;
 
 }
 
@@ -178,3 +178,66 @@ body {
 }
 
 /* end our work */
+/* start-about */
+.container h4 {
+    color: var(--blue-color);
+}
+
+.row h2 {
+    color: var(--blue-color);
+}
+
+.about .row .box img {
+    border-radius: 50%;
+}
+
+/* end-about */
+/* start-exoerince */
+.experince {
+    background-color: var(--section-color);
+}
+
+.main-title h2 {
+    color: var(--blue-color);
+}
+
+.experince .row h4 {
+    background-color: var(--dark-color);
+}
+
+/* end-exoerince */
+/* start-thanks */
+.thanks {
+    background-color: var(--dark-color);
+}
+
+/* start-thanks */
+/* start-subscribe */
+.subscribe {
+    background-color: var(--blue-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+/* end-subscribe */
+/* start-footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer img {
+    height: 44px;
+}
+
+.copy-right>span {
+    color: var(--section-color);
+}
+
+.copy-right div span {
+    color: var(--text-color);
+}
+
+/* end-footer */
